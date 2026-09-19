@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  /* Links are placeholders filled by publish-site.js: search for "YOUR-" */
+  
   :root {
     --bg:#0d1017; --bg2:#10141c; --surface:#151a24; --line:#232a38; --line2:#2e3747;
     --text:#e9ecf2; --dim:#8b93a6; --faint:#5b6376; --accent:#9aa8ff; --accent-ink:#0d1017;
@@ -41,7 +41,7 @@
   .btn-primary:hover { background:#fff; border-color:#fff; }
   :focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
 
-  /* nav */
+  
   nav { position:sticky; top:0; z-index:50; background:#0d1017e6; backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
   nav .wrap { display:flex; align-items:center; gap:32px; height:60px; }
   .logo { display:flex; align-items:center; gap:9px; font-weight:600; text-decoration:none; letter-spacing:-.01em; }
@@ -50,7 +50,7 @@
   nav .links a { text-decoration:none; } nav .links a:hover { color:var(--text); }
   nav .btn { margin-left:auto; padding:7px 14px; font-size:14px; }
 
-  /* hero */
+  
   .hero { padding:96px 0 0; position:relative; }
   .hero::before { content:''; position:absolute; inset:0 0 auto; height:720px; background:radial-gradient(60% 55% at 50% 0%, #9aa8ff1f, transparent 70%); pointer-events:none; }
   .hero h1 { font-size:clamp(44px, 7.4vw, 92px); max-width:13ch; letter-spacing:-.05em; }
@@ -58,7 +58,7 @@
   .hero .ctas { display:flex; gap:10px; flex-wrap:wrap; margin-top:32px; }
   .hero .note { margin-top:14px; font-size:14px; color:var(--faint); }
 
-  /* the signature: drag to compare your screen vs theirs */
+  
   .compare { margin-top:72px; position:relative; border:1px solid var(--line2); border-radius:18px; overflow:hidden; aspect-ratio:16/9; background:var(--surface); box-shadow:0 50px 120px -40px #000; user-select:none; touch-action:pan-y; }
   .scene { position:absolute; inset:0; }
   .slide { position:absolute; inset:0; background:#f3f4f7; color:#1a1e27; padding:5% 6%; }
@@ -84,7 +84,7 @@
   .apps { display:flex; flex-wrap:wrap; gap:12px 36px; margin-top:64px; padding-bottom:96px; color:var(--dim); font-weight:500; font-size:15px; }
   .apps span:first-child { color:var(--faint); font-weight:400; }
 
-  /* features: rows, not cards */
+  
   .feats { display:grid; grid-template-columns:repeat(3, 1fr); border-top:1px solid var(--line); }
   .feat { padding:32px 28px 36px 0; border-bottom:1px solid var(--line); }
   .feat:not(:nth-child(3n+1)) { padding-left:28px; border-left:1px solid var(--line); }
@@ -95,7 +95,7 @@
   .who { display:flex; flex-wrap:wrap; gap:8px 28px; font-size:clamp(22px, 3vw, 34px); font-weight:500; letter-spacing:-.03em; color:var(--faint); }
   .who span:nth-child(odd) { color:var(--text); }
 
-  /* pricing */
+  
   .plans { display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line2); border-radius:18px; overflow:hidden; }
   .plan { padding:40px; display:flex; flex-direction:column; }
   .plan + .plan { border-left:1px solid var(--line2); background:var(--surface); }
@@ -109,7 +109,7 @@
   .plan .buy { display:grid; gap:8px; }
   .guarantee { color:var(--dim); font-size:15px; margin-top:22px; }
 
-  /* faq */
+  
   .faq { border-top:1px solid var(--line); }
   details { border-bottom:1px solid var(--line); }
   summary { cursor:pointer; list-style:none; padding:22px 40px 22px 0; font-weight:500; font-size:18px; position:relative; letter-spacing:-.01em; }
@@ -243,9 +243,10 @@
           <li>Ghost mode, mini mode and fade</li>
           <li>Notes folder, snippets, search and themes</li>
         </ul>
-        <!-- YOUR-CHECKOUT-MONTHLY / YOUR-CHECKOUT-YEARLY: filled from config.js by publish-site.js -->
+        
         <div class="buy">
-        <a class="btn btn-primary" aria-disabled="true" style="opacity:.6;pointer-events:none">Pro — coming soon</a>
+        <a class="btn btn-primary" href="https://checkout.dodopayments.com/buy/pdt_0NnwdrNnaKuEnaIQqa5CK">Get Pro for $10.99 a month</a>
+        <a class="btn" href="https://checkout.dodopayments.com/buy/pdt_0NnwhWV7J3Mlr0dbhjC9j">Get Pro for $79 a year</a>
         </div>
       </div>
     </div>
