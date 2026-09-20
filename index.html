@@ -93,6 +93,7 @@
   .feat p { color:var(--dim); margin-top:10px; font-size:15px; max-width:34ch; }
   .pro { font-size:12px; font-weight:500; letter-spacing:0; color:var(--accent); border:1px solid #9aa8ff55; padding:1px 7px; border-radius:6px; }
 
+  .tut { width:100%; max-width:900px; border:1px solid var(--line2); border-radius:14px; background:var(--surface); display:block; }
   .who { display:flex; flex-wrap:wrap; gap:8px 28px; font-size:clamp(22px, 3vw, 34px); font-weight:500; letter-spacing:-.03em; color:var(--faint); }
   .who span:nth-child(odd) { color:var(--text); }
 
@@ -149,7 +150,7 @@
 <nav>
   <div class="wrap">
     <a class="logo" href="#"><b>◐</b> Stealth Panel</a>
-    <div class="links"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
+    <div class="links"><a href="#features">Features</a><a href="#tutorial">Demo</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
     <a class="btn btn-primary" href="https://github.com/SavjeetSingh/stealthpanel/releases/download/v1.0.2/StealthPanel-Setup-1.0.2.exe">Download</a>
   </div>
 </nav>
@@ -203,6 +204,16 @@
       <div class="feat"><h3>Mini mode <span class="pro">Pro</span></h3><p>Shrink it to a strip under your webcam so your eyes stay near the camera.</p></div>
       <div class="feat"><h3>Stays on your PC</h3><p>Notes and settings never leave your computer. No account, no cloud sync.</p></div>
     </div>
+  </div>
+</section>
+
+<section id="tutorial">
+  <div class="wrap">
+    <div class="head">
+      <h2>See it work</h2>
+      <p>Half a minute, recorded from the app itself. The middle section is a real screen recording, which is why the panel vanishes from it.</p>
+    </div>
+    <video class="tut" src="tutorial.mp4" poster="tutorial.jpg" controls preload="none" playsinline aria-label="Stealth Panel tutorial"></video>
   </div>
 </section>
 
